@@ -1,0 +1,80 @@
+.container_PaymentManagement {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+
+  .container_PaymentManagement_menu {
+    width: 18%;
+    height: 100vh;
+  }
+  .container_PaymentManagement_body {
+    width: 82%;
+    height: 100vh;
+
+    .container_PaymentManagement_body_search {
+      width: 100%;
+      height: 8%;
+      background-color: #fcfffc;
+      border-bottom: 1px solid #a0a0a0b6;
+      display: flex;
+      position: relative;
+      p {
+        position: absolute;
+        bottom: 0;
+        color: #636e72;
+        left: 20px;
+        font-size: 20px;
+      }
+      .container_PaymentManagement_body_search_input {
+        position: absolute;
+        right: 20px;
+        width: 450px;
+        margin-top: 10px;
+        height: 40px;
+        background-color: #e3e5e2;
+        align-items: center;
+        float: right;
+        i {
+          color: #2d3436;
+          padding: 12px;
+          font-size: 18px;
+          cursor: pointer;
+        }
+        input {
+          width: 85%;
+          margin-left: 15px;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  .container_PaymentManagement_body_main {
+    width: 100%;
+    height: 92%;
+    position: relative;
+
+    .container_PaymentManagement_user_right_table {
+      width: 100%;
+      height: 95%;
+    }
+    .PaymentManagement_total {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      color: #ea2027;
+      text-align: right;
+      font-size: 16px;
+      font-weight: 600;
+      padding-right: 50px;
+      p {
+        margin-bottom: 3px;
+      }
+    }
+  }
+}

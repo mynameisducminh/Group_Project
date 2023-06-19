@@ -1,0 +1,89 @@
+.container_SaleProduct {
+  width: 100%;
+  height: auto;
+
+  .container_SaleProduct_top {
+    width: 70%;
+    height: 180px;
+    margin-left: 15%;
+    position: relative;
+
+    .container_SaleProduct_top_search {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 630px;
+      height: 40px;
+      display: flex;
+      box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px,
+        rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+      .container_SaleProduct_top_search_1 {
+        width: 480px;
+        height: 64px;
+        align-items: center;
+
+        i {
+          padding: 12px;
+          font-size: 18px;
+          color: rgb(158 158 167);
+        }
+
+        input {
+          width: 80%;
+          font-size: 20px;
+          border: none;
+          outline: none;
+          transform: translateY(-2px);
+        }
+      }
+
+      .container_SaleProduct_top_search_2 {
+        width: 150px;
+        height: 40px;
+        border-left: 1px solid;
+        display: flex;
+        flex-wrap: wrap;
+
+        select {
+          cursor: pointer;
+          margin-left: 5px;
+          font-size: 20px;
+          width: 90%;
+          outline: none;
+          border: none;
+          text-transform: capitalize;
+        }
+      }
+    }
+  }
+
+  .container_SaleProduct_product_card_main {
+    width: 100%;
+    height: cover;
+    .container_SaleProduct_product_card {
+      width: 80%;
+      margin-left: 10%;
+      height: cover;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .navigation_page {
+      width: 90%;
+      margin-left: 5%;
+      height: 40px;
+      display: grid;
+      place-items: center;
+    }
+  }
+}
+
+.RingLoader {
+  position: relative;
+  margin-top: 100px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}

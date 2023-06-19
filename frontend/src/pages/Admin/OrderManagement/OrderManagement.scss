@@ -1,0 +1,168 @@
+.container_OrderManagement {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  background-color: #e3e5e2;
+  .container_OrderManagement_menu {
+    width: 18%;
+    height: 100vh;
+  }
+  .container_OrderManagement_body {
+    width: 82%;
+    height: 100vh;
+    .container_OrderManagement_body_search {
+      width: 100%;
+      height: 8%;
+      background-color: #fcfffc;
+      border-bottom: 1px solid #a0a0a0b6;
+      display: flex;
+      position: relative;
+      p {
+        position: absolute;
+        bottom: 0;
+        color: #636e72;
+        left: 20px;
+        font-size: 20px;
+      }
+      .container_OrderManagement_body_search_input {
+        position: absolute;
+        right: 20px;
+        width: 450px;
+        margin-top: 10px;
+        height: 40px;
+        background-color: #e3e5e2;
+        align-items: center;
+        float: right;
+        i {
+          color: #2d3436;
+          padding: 12px;
+          font-size: 18px;
+        }
+        input {
+          width: 85%;
+          margin-left: 15px;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+  .container_OrderManagement_body_main {
+    width: 100%;
+    height: 92%;
+    .container_OrderManagement_body_main_Order {
+      width: 100%;
+      height: 100%;
+      background-color: #fcfffc;
+      .container_OrderManagement_body_main_button {
+        width: 80%;
+        height: 40px;
+        margin-left: 10%;
+        display: flex;
+        justify-content: space-between;
+        button {
+          cursor: pointer;
+          padding: 0px 15px;
+          margin-top: 10px;
+          background-color: #fcfffc;
+          border: 1px solid #333333;
+          border-radius: 3px;
+          text-transform: capitalize;
+          font-weight: 400;
+        }
+        .OrderManagement_btn1:hover {
+          color: #fcfffc;
+          background-color: #b2bec3;
+          border: 1px solid #b2bec3;
+        }
+        .OrderManagement_btn2:hover {
+          color: #fcfffc;
+          background-color: #2ecc71;
+          border: 1px solid #2ecc71;
+        }
+        .OrderManagement_btn6:hover {
+          color: #fcfffc;
+          background-color: #27ae60;
+          border: 1px solid #27ae60;
+        }
+        .OrderManagement_btn3:hover {
+          color: #fcfffc;
+          background-color: #c0392b;
+          border: 1px solid #c0392b;
+        }
+        .OrderManagement_btn4:hover {
+          color: #fcfffc;
+          background-color: #0984e3;
+          border: 1px solid #0984e3;
+        }
+        .OrderManagement_btn5:hover {
+          color: #fcfffc;
+          background-color: #27ae60;
+          border: 1px solid #27ae60;
+        }
+      }
+      .container_OrderManagement_body_main_table {
+        width: 95%;
+        margin-left: 2.5%;
+        height: 80%;
+        margin-top: 20px;
+        table {
+          width: 100%;
+          td,
+          th {
+            font-size: 13px;
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+            text-align: center;
+            img {
+              width: 100px;
+              object-fit: cover;
+            }
+          }
+          td {
+            .button_OrderManagement {
+              flex-direction: column;
+              button {
+                margin: auto;
+                cursor: pointer;
+                background-color: transparent;
+                text-transform: capitalize;
+                display: block;
+                padding: 3px 10px;
+                border: 1px solid rgba(146, 144, 144, 0.867);
+                width: 100px;
+              }
+              .accept_order:hover {
+                color: #fff;
+                background-color: #27ae60;
+              }
+              .cancel_order:hover {
+                color: #fff;
+                background-color: #c0392b;
+              }
+            }
+          }
+        }
+      }
+      .container_OrderManagement_body_main_pagination {
+        width: 100%;
+        height: 10%;
+        margin-top: 0px;
+        display: grid;
+        place-items: center;
+      }
+    }
+  }
+}
+
+.PuffLoader {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -100%);
+}

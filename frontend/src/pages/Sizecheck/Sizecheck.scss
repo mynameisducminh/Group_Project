@@ -1,0 +1,36 @@
+.sizecheck-container {
+  width: 100%;
+  display: flex;
+  transform: translateY(120px);
+  margin-bottom: 30px;
+
+  .sizecheck-left {
+    width: 20%;
+  }
+
+  .sizecheck-content {
+    width: 60%;
+
+    .sizecheck-title {
+        color: #1e3799;
+        width: 100%;
+        height: auto;
+        margin-left: 50px;
+        margin-top: 20px;
+      }
+
+      .sizecheck-images {
+        margin: 50px 130px;
+        padding-bottom: 50px;
+
+        .sizecheck-images-image{
+          margin-top: 30px;
+        }
+
+      }
+  }
+
+  .sizecheck-right {
+    width: 20%;
+  }
+}

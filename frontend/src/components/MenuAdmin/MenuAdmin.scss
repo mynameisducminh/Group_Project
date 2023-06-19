@@ -1,0 +1,80 @@
+.container_menu_admin {
+  width: 100%;
+  height: 100vh;
+  border: 1px solid #a0a0a0b6;
+  background-color: #fcfffc;
+  .container_menu_admin_intro {
+    width: 100%;
+    height: 220px;
+    border-bottom: 1px solid #a0a0a0b6;
+    .container_menu_admin_intro_img {
+      overflow: hidden;
+      transform: translate(-50%, 30px);
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      margin-left: 50%;
+      display: grid;
+      place-items: center;
+      border: 4px solid #0984e3;
+
+      img {
+        
+        margin-top: -5%;
+        width: 100%;
+      }
+    }
+    .container_menu_admin_intro_text {
+      margin-top: 35px;
+      width: 100%;
+      height: 40px;
+      p {
+        font-size: 18px;
+        font-weight: 700;
+        margin-top: 35px;
+        text-align: center;
+        margin-bottom: 0;
+      }
+      i {
+        font-size: 14px;
+        margin-left: 40%;
+        transform: translateX(-50%);
+        text-align: center;
+      }
+    }
+  }
+
+  .container_menu_admin_navbar {
+    width: 100%;
+    margin-top: 20px;
+    height: 500px;
+    .option_menu_admin {
+      display: flex;
+      list-style: none;
+      margin-top: 5px;
+      height: 60px;
+      align-items: center;
+      &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: #0984e3;
+      }
+      i {
+        margin-left: 20px;
+        font-size: 28px;
+        padding: 10px;
+      }
+      span {
+        text-transform: capitalize;
+        margin-top: 2px;
+        font-weight: 400;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.acctiveMenuAdmin {
+  color: #fff;
+  background-color: #0984e3;
+}

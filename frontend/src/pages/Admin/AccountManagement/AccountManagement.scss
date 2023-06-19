@@ -1,0 +1,128 @@
+.container_AccountManagement {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+
+  .container_AccountManagement_menu {
+    width: 18%;
+    height: 100vh;
+  }
+  .container_AccountManagement_body {
+    width: 82%;
+    height: 100vh;
+    .container_AccountManagement_body_search {
+      width: 100%;
+      height: 8%;
+      background-color: #fcfffc;
+      border-bottom: 1px solid #a0a0a0b6;
+      display: flex;
+      position: relative;
+      p {
+        position: absolute;
+        bottom: 0;
+        color: #636e72;
+        left: 20px;
+        font-size: 20px;
+      }
+      .container_AccountManagement_body_search_input {
+        position: absolute;
+        right: 20px;
+        width: 450px;
+        margin-top: 10px;
+        height: 40px;
+        background-color: #e3e5e2;
+        align-items: center;
+        float: right;
+        i {
+          color: #2d3436;
+          padding: 12px;
+          font-size: 18px;
+          cursor: pointer;
+        }
+        input {
+          width: 85%;
+          margin-left: 15px;
+          font-size: 18px;
+          border: none;
+          outline: none;
+          background-color: transparent;
+          transform: translateY(-2px);
+        }
+      }
+    }
+  }
+
+  .container_AccountManagement_body_main {
+    width: 100%;
+    height: 92%;
+
+    .container_AccountManagement_user_right_table {
+      width: 100%;
+      height: 550px;
+
+      table {
+        width: 100%;
+        margin: 0 auto;
+
+        th {
+          text-align: center;
+        }
+
+        td,
+        th {
+          border: 1px solid #dddddd;
+          text-transform: capitalize;
+          padding: 10px;
+          font-size: 13px;
+          font-weight: 700;
+        }
+
+        td {
+          img {
+            width: 100px;
+          }
+
+          text-align: center;
+        }
+
+        .AccountManagement_btn {
+          width: 200px;
+
+          button {
+            width: 120px;
+            cursor: pointer;
+            padding: 5px 10px;
+            margin-top: 10px;
+            text-align: center;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: 500;
+            background-color: transparent;
+
+            &:nth-child(1) {
+              border: 1px solid #ea2027;
+              color: #ea2027;
+            }
+
+            &:nth-child(1):hover {
+              color: #fff;
+              cursor: pointer;
+              background-color: #ea2027;
+            }
+          }
+
+          i {
+            font-size: 20px;
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .AccountManagement_pagination {
+      width: 200px;
+      margin: 0 auto;
+      margin-top: 50px;
+    }
+  }
+}
